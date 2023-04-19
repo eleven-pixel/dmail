@@ -10,10 +10,13 @@ leo build
 ### Send message
 
 Anyone can send a new mail message by calling `send` function.
-第一个参数是收信人的钱包地址
-第二个参数信息内容在IPFS上的CID
-第三个参数回复CID
-因为leo 现在还不支持string,所以把cid字符转成二进制数字，分成8个切片后转成leo Field类型，因为Field最多支持76个数字保存不变，76个就变了
+The first parameter is the recipient's wallet address
+
+The CID of the second parameter information content on IPFS
+
+Reply to CID for the third parameter
+
+Because Leo currently does not support strings, convert the cid character into binary digits, divide it into 8 slices, and then convert it to Leo Field type. This is because Leo Field type supports a maximum of 76 digits and remains unchanged. If it exceeds 76 digits, it will change
 
 Run `send`:
 
