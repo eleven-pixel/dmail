@@ -18,10 +18,11 @@ program dmail.aleo {
         from:address,
 
         cid:Cid,
-        reply:Cid
+        reply:Cid,
+        time:field
     }
 
-    transition send(to :address, cid: Cid,reply: Cid) -> message {
+    transition send(to :address, cid: Cid,reply: Cid,time:field) -> message {
         return message {
             owner:to,
             gates:0u64,
@@ -29,6 +30,7 @@ program dmail.aleo {
 
             cid:cid,
             reply:reply,
+            time:time
         };
     }
     
