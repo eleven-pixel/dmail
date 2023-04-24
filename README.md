@@ -30,7 +30,16 @@ slice5:111010100111000001100010111101001010001010001field,
 slice6:1010010010011010011001101101111011100010101field,
 slice7:1001010000100101010001110101011110000111000101field,
 slice8:1000100110011101101111001100010111001000111000field
-}" "{slice1:0field,slice2:0field,slice3:0field,slice4:0field,slice5:0field,slice6:0field,slice7:0field,slice8:0field}"
+}" "{
+slice1: 0field.private,
+slice2: 0field.private,
+slice3: 0field.private,
+slice4: 0field.private,
+slice5: 0field.private,
+slice6: 0field.private,
+slice7: 0field.private,
+slice8: 0field.private
+}" "1682345633000field"
 ```
 
 Output sample:
@@ -62,6 +71,7 @@ Output sample:
     slice7: 0field.private,
     slice8: 0field.private
   },
+  time:1682345633000field,
   _nonce: 3628249438122404002733756539129099892182212894341134701273652494387234665304group.public
 }
 ```
